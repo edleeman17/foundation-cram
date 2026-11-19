@@ -1,0 +1,10 @@
+services:
+  foundation-cram:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - progress:/data
+    restart: unless-stopped
+volumes:
+  progress:
